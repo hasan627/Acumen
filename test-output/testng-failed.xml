@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="company.ProjectSetup">
+        <methods>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- company.ProjectSetup -->
+      <class name="company.CreateCompany">
+        <methods>
+          <include name="ManageCompany"/>
+        </methods>
+      </class> <!-- company.CreateCompany -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

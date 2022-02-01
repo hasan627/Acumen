@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="232" started-at="2019-10-13T18:38:45Z" finished-at="2019-10-13T18:38:45Z">
+    <groups>
+      <group name="Company">
+        <method signature="ProjectSetup.CreateCompany()[pri:1, instance:company.ProjectSetup@51565ec2]" name="CreateCompany" class="company.ProjectSetup"/>
+      </group> <!-- Company -->
+    </groups>
+    <test name="Default test" duration-ms="232" started-at="2019-10-13T18:38:45Z" finished-at="2019-10-13T18:38:45Z">
+      <class name="company.ProjectSetup">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:company.ProjectSetup@51565ec2]" name="Setup" is-config="true" duration-ms="134" started-at="2019-10-13T11:38:45Z" finished-at="2019-10-13T11:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:company.ProjectSetup@51565ec2]" name="Login" duration-ms="22" started-at="2019-10-13T11:38:45Z" finished-at="2019-10-13T11:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="CreateCompany()[pri:1, instance:company.ProjectSetup@51565ec2]" name="CreateCompany" duration-ms="3" started-at="2019-10-13T11:38:45Z" depends-on-methods="company.ProjectSetup.Login" finished-at="2019-10-13T11:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCompany -->
+        <test-method status="FAIL" signature="CloseBrowser()[pri:0, instance:company.ProjectSetup@51565ec2]" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2019-10-13T11:38:45Z" finished-at="2019-10-13T11:38:45Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at company.ProjectSetup.CloseBrowser(ProjectSetup.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:232)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:115)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- company.ProjectSetup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
